@@ -129,7 +129,7 @@ public class Game {
                 if(myMap[player.getX()][player.getY()] == 5){
                     JOptionPane.showMessageDialog(null, "회수 추가 아이템 획득!", "아이템 획득", JOptionPane.INFORMATION_MESSAGE);
                     int originCnt = map.getCntLimit();
-                    map.setCntLimit(originCnt + myMap.length);
+                    map.setCntLimit(originCnt + ((myMap.length + myMap[0].length) / 2));
                     System.out.println("제한 회수 변경 " + originCnt + "회 -> " + map.getCntLimit() + "회");
                     myMap[player.getX()][player.getY()] = 1;
                     info.setmaxcntText(String.valueOf((map.getCntLimit())));
