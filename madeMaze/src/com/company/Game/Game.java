@@ -53,7 +53,6 @@ public class Game {
     }
 
     public void setItemzone(){
-        System.out.println(map.getItemZone().size());
         int[] idxArr = new int[map.getItemZone().size()];
         Random rand = new Random();
         int cnt = 0;
@@ -100,6 +99,7 @@ public class Game {
     }
 
     public void playGame(){
+        createPlayer();
         initGame();
         timer.start();                          // 타이머 스레드 실행
         info.setmaxcntText(String.valueOf(map.getCntLimit()));

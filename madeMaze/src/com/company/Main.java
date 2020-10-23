@@ -7,7 +7,6 @@ public class Main {
 
         Game mazeGame = new Game();
 
-        mazeGame.createPlayer();
         mazeGame.playGame();
 
     }

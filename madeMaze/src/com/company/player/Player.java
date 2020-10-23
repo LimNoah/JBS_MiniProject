@@ -16,9 +16,6 @@ public class Player {
     }
 
     public void initPlayer(int [][] map){
-        this.x = 0;
-        this.y = 1;
-        this.cnt = 0;
         this.map = map;
     }
 
